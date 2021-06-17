@@ -8,7 +8,7 @@ from sklearn.utils import shuffle
 # Since our data is seperated by semicolons we need to do sep=";"
 data = pd.read_csv("student-mat.csv", sep=";")
 
-data = data[["G1", "G2", "G3", "studytime", "failures", "absences", "Dalc", "Walc", "goout"]]
+data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
 
 predict = "G3" #Final grades (Label = what you are trying to predict)
 
